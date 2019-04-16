@@ -3,8 +3,6 @@ PHONY :=
 
 DOCKER_IMAGE := druidfi/docker-s3cmd:latest
 
-S3_PATH := stonehenge-server-backups/production/itis-sms/master/
-
 PHONY += build
 build: ## Build image
 	docker build --no-cache --force-rm . -t ${DOCKER_IMAGE}
